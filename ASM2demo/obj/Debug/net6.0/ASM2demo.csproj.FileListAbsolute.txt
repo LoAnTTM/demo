@@ -1,0 +1,45 @@
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.deps.json
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.runtimeconfig.json
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.AssemblyReference.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfoInputs.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfo.cs
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.CoreCompileInputs.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/refint/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.genruntimeconfig.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM2demo/ASM2demo/obj/Debug/net6.0/ref/ASM2demo.dll
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.deps.json
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.runtimeconfig.json
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.AssemblyReference.cache
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfoInputs.cache
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfo.cs
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.CoreCompileInputs.cache
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/refint/ASM2demo.dll
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.genruntimeconfig.cache
+/Users/loantruong/Pictures/ASM2demo/ASM2demo/obj/Debug/net6.0/ref/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.deps.json
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.runtimeconfig.json
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/bin/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.AssemblyReference.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.GeneratedMSBuildEditorConfig.editorconfig
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfoInputs.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.AssemblyInfo.cs
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.csproj.CoreCompileInputs.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/refint/ASM2demo.dll
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.pdb
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ASM2demo.genruntimeconfig.cache
+/Users/loantruong/Documents/1618- Programming/Work/ASM 2/ASM2demo/ASM2demo/obj/Debug/net6.0/ref/ASM2demo.dll
