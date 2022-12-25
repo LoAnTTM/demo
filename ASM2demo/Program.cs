@@ -285,7 +285,7 @@ class Program
         return null;
 
     }
-
+    // Choice room
     static Room choiceRoom(List<Hotel> hotels)
     {
         // Display list hotels
