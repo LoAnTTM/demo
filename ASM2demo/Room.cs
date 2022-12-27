@@ -20,7 +20,7 @@ class Room
 
     public void edit()
     {
-        Console.Write("Input price: ");
+        Console.Write("Update price: ");
         price = Int32.Parse(Console.ReadLine());
     }
 
@@ -36,7 +36,7 @@ class Room
 
     public void display()
     {
-        Console.WriteLine("Room (Id: {0}, price : {1}", id, price);
+        Console.WriteLine("Room (Id: {0}, price : {1})", id, price);
     }
 }
 

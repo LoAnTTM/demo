@@ -33,7 +33,7 @@ class Customer
         Console.Write("Input full name : ");
         name = Console.ReadLine();
 
-        Console.Write("Input phone number : ");
+        Console.Write("Update phone number : ");
         phone = Console.ReadLine();
 
     }

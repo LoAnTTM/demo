@@ -94,106 +94,7 @@ class Program
         Console.Write("Choose your action : ");
     }
 
-    //Statistic
-    //static void statistic(List<Hotel> hotels, List<Booking> bookings)
-    //{
-    //    foreach(Hotel hotel in hotels)
-    //    {
-    //        Double hotelMoney = 0;
-    //        foreach(Room room in hotel.roomList)
-    //        {
-    //            hotelMoney += getMoneyFromBooking(bookings, room);
-    //        }
-    //        Console.WriteLine("Hotel {0}: total money: {1}", hotel.id, hotelMoney);
-    //    }
-    //}
-
-    static Double getMoneyFromBooking(List<Booking> bookings, Room room)
-    {
-        Double roomMoney = 0;
-        foreach (Booking booking in bookings)
-        {
-            if (booking.roomId == room.id && booking.inUse == true)
-            {
-                roomMoney += room.price * booking.checkout.Subtract(booking.checkin).TotalHours;
-            }
-        }
-        return roomMoney;
-    }
-
-    //Edit Customer
-    static void editCustomer(List<Customer> customers)
-    {
-        Console.Write("Please input customer id card:");
-        string idCard = Console.ReadLine();
-        Customer customer = findCustomer(customers, idCard);
-        customer.edit();
-    }
-
-    static void editRoom(List<Hotel> hotels)
-    {
-        Room room = choiceRoom(hotels);
-        room.edit();
-    }
-
-    static void checkoutRoom(List<Hotel> hotels, List<Booking> bookings)
-    {
-        Room room = choiceRoom(hotels);
-        if (room.isAvailable == true)
-        {
-            Console.WriteLine("Room is not using");
-        } else
-        {
-            findCheckoutBooking(bookings, room);
-        }
-    }
-
-    //Delete Booking
-    static void deleteBooking(List<Booking> bookings)
-    {
-        Booking deleteBooking = findBooking(bookings);
-        if (deleteBooking == null) return;
-        foreach (Booking booking in bookings.ToList())
-        {
-            if (booking.id == deleteBooking.id)
-            {
-                bookings.Remove(booking);
-            }
-        }
-    }
-
-
-    static void findCheckoutBooking(List<Booking> bookings, Room room)
-    {
-        foreach(Booking booking in bookings)
-        {
-            if (booking.roomId == room.id && booking.inUse == true)
-            {
-                booking.checkoutRoom(room);
-            }
-        }
-    }
-
-    //Find Booking
-    static Booking findBooking(List<Booking> bookings)
-    {
-        foreach (Booking booking in bookings)
-        {
-            booking.show();
-        }
-        Console.Write("Choice booking id: ");
-        int bookingId = Int32.Parse(Console.ReadLine());
-        foreach(Booking booking in bookings)
-        {
-            if (booking.id == bookingId)
-            {
-                return booking;
-            }
-        }
-        return null;
-    }
-
-    //Add Hotel
+    //1. Add Hotel
     static void addHotel(List<Hotel> hotels)
     {
         Hotel hotel = new Hotel();
@@ -201,7 +102,7 @@ class Program
         hotels.Add(hotel);
     }
 
-    //Show Hotel
+    //2. Show Hotel
     static void showHotel(List<Hotel> hotels)
     {
         foreach(Hotel hotel in hotels)
@@ -210,32 +111,7 @@ class Program
         }
     }
 
-    static Customer findOrAddCustomer(List<Customer> customers, string idCard)
-    {
-        foreach (Customer customer in customers)
-        {
-            if (customer.idCard.Equals(idCard))
-            {
-                return customer;
-            }
-        }
-
-        return addCustomer(customers, idCard);
-    }
-
-    static Customer findCustomer(List<Customer> customers, string idCard)
-    {
-        foreach (Customer customer in customers)
-        {
-            if (customer.idCard.Equals(idCard))
-            {
-                return customer;
-            }
-        }
-
-        return null;
-    }
-
+    //3. Add customer
     static Customer addCustomer(List<Customer> customers, string idCard = "")
     {
         if(findCustomer(customers, idCard) != null)
@@ -249,6 +125,41 @@ class Program
         return newCustomer;
     }
 
+    //4. Find customer
+    static Customer findCustomer(List<Customer> customers, string idCard)
+    {
+        foreach (Customer customer in customers)
+        {
+            if (customer.idCard.Equals(idCard))
+            {
+                return customer;
+            }
+        }
+
+        return null;
+    }
+
+    //5. Edit Customer
+    static void editCustomer(List<Customer> customers)
+    {
+        Console.Write("Please input customer id card:");
+        string idCard = Console.ReadLine();
+        Customer customer = findCustomer(customers, idCard);
+        customer.edit();
+    }
+
+    //6. Show available room
+    static void showAvailableRoom(List<Hotel> hotels)
+    {
+        foreach (Hotel hotel in hotels)
+        {
+            hotel.display();
+            hotel.displayAvailableRoom();
+        }
+    }
+
+
+            //Find hotel
     static Hotel findHotel(List<Hotel> hotels, int hotelId)
     {
         foreach (Hotel hotel in hotels)
@@ -259,18 +170,11 @@ class Program
             }
         }
         return null;
-
     }
 
-    static void showAvailableRoom(List<Hotel> hotels)
-    {
-        foreach (Hotel hotel in hotels)
-        {
-            hotel.display();
-            hotel.displayAvailableRoom();
-        }
-    }
 
+
+            // Find room
     static Room findRoom(List<Room> rooms)
     {
         Console.Write("Please input room id: ");
@@ -283,9 +187,9 @@ class Program
             }
         }
         return null;
-
     }
-    // Choice room
+
+            // Choice room
     static Room choiceRoom(List<Hotel> hotels)
     {
         // Display list hotels
@@ -317,6 +221,28 @@ class Program
         return chosedRoom;
     }
 
+
+
+    //7. Edit room
+    static void editRoom(List<Hotel> hotels)
+    {
+        Room room = choiceRoom(hotels);
+        room.edit();
+    }
+
+    //8. Book room
+    //Finđ or add customer
+    static Customer findOrAddCustomer(List<Customer> customers, string idCard)
+    {
+        foreach (Customer customer in customers)
+        {
+            if (customer.idCard.Equals(idCard))
+            {
+                return customer;
+            }
+        }
+        return addCustomer(customers, idCard);
+    }
     static void bookRoom(List<Hotel> hotels, List<Customer> customers, List<Booking> bookings)
     {
         Console.Write("Please input customer id card: ");
@@ -330,9 +256,102 @@ class Program
         Booking booking = new Booking();
         Console.Write("Input booking id: ");
         int bookingId = Int32.Parse(Console.ReadLine());
-        booking.book(bookingId, room, customer.idCard);;
+        booking.book(bookingId, room, customer.idCard); ;
         bookings.Add(booking);
     }
 
+    //9. Delete Booking
+    //Find Booking
+    static Booking findBooking(List<Booking> bookings)
+    {
+        foreach (Booking booking in bookings)
+        {
+            booking.show();
+        }
+        Console.Write("Choice booking id: ");
+        int bookingId = Int32.Parse(Console.ReadLine());
+        foreach (Booking booking in bookings)
+        {
+            if (booking.id == bookingId)
+            {
+                return booking;
+            }
+        }
+        return null;
+    }
+    static void deleteBooking(List<Booking> bookings)
+    {
+        Booking deleteBooking = findBooking(bookings);
+        if (deleteBooking == null) return;
+        foreach (Booking booking in bookings.ToList())
+        {
+            if (booking.id == deleteBooking.id)
+            {
+                bookings.Remove(booking); return;
+            }
+        }
+    }
+
+    //10. Check out room
+    static void findCheckoutBooking(List<Booking> bookings, Room room)
+    {
+        foreach (Booking booking in bookings)
+        {
+            if (booking.roomId == room.id && booking.inUse == true)
+            {
+                booking.checkoutRoom(room);
+            }
+        }
+    }
+    static void checkoutRoom(List<Hotel> hotels, List<Booking> bookings)
+    {
+        Room room = choiceRoom(hotels);
+        if (room.isAvailable == true)
+        {
+            Console.WriteLine("Room is not using");
+        } else
+        {
+            findCheckoutBooking(bookings, room);
+        }
+    }
+
+
+
+
+   
+
+
+
+
+
+
+
+
+    //Statistic
+    //static void statistic(List<Hotel> hotels, List<Booking> bookings)
+    //{
+    //    foreach(Hotel hotel in hotels)
+    //    {
+    //        Double hotelMoney = 0;
+    //        foreach(Room room in hotel.roomList)
+    //        {
+    //            hotelMoney += getMoneyFromBooking(bookings, room);
+    //        }
+    //        Console.WriteLine("Hotel {0}: total money: {1}", hotel.id, hotelMoney);
+    //    }
+    //}
+
+    //static Double getMoneyFromBooking(List<Booking> bookings, Room room)
+    //{
+    //    Double roomMoney = 0;
+    //    foreach (Booking booking in bookings)
+    //    {
+    //        if (booking.roomId == room.id && booking.inUse == true)
+    //        {
+    //            roomMoney += room.price * booking.checkout.Subtract(booking.checkin).TotalHours;
+    //        }
+    //    }
+    //    return roomMoney;
+    //}
 }
 
